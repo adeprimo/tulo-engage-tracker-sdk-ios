@@ -14,7 +14,7 @@ github "adeprimo/tulo-engage-tracker-sdk-ios"
 
 ## Usage
 ### Setup
-In order to be able to send tracking events you must import TuloEngageTracker and create an instance of it. You will need the organizationId, productId and the URL to the user event service.
+In order to be able to send tracking events you must import TuloEngageTracker and create an instance of it. You will need the organizationId, productId and the URL to the event service.
 
 ```Swift
 let engageTracker = TuloEngageTracker(organizationId: "myorganisation", productId: "MYPRODUCT", eventUrl: URL(string: "http://user-event-service.com/api/v1/events")!)
@@ -43,11 +43,17 @@ func applicationWillEnterForeground(_ application: UIApplication) {
         engageTracker.trackEvent(name: "app:open")
     }
 ```
+### Opt Out
+If the user of the app does not want to be tracked you can set optOut on Tulo Engage Tracker. If set, the tracker won't send any events.
+```Swift
+engageTracker.optOut = true
+```
+
 ### Tracking
-All tracking in Tulo Engage Tracker is done by sending different events. You can either use predefined or custom events. In addition to the data sent together with the event you can enrich the data by setting user and/or content data.
+All tracking in Tulo Engage Tracker is done by sending different events. You can either use predefined or custom events. In addition to the data sent together with the event you can enrich the data by setting user and/or content data. The events are sent straight away and no queuing is implemented at the moment.
 
 ### Setting User Data
-When set, the user data is always sent together with all events. User data contains the following properties: userId, paywayId, states, products, positionLon, positionLat, location. If you want to save and persist the user data properties in your app you can do so by setting persist to true. To delete a property you can set it to null.
+When set, the user data is always sent together with all events. User data contains the following properties: userId, paywayId, states, products, positionLon, positionLat, location. If you want to save and persist the user data properties in your app so it is available after restarting the app, you can do so by setting persist to true. To delete a property you can set it to null.
 ```Swift
 // set user properties and save them in app
 engageTracker.setData(userId: "123456", products: ["product1", "product2"], persist: true)
