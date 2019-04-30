@@ -1,0 +1,11 @@
+framework module TuloEngageTracker {
+  umbrella header "TuloEngageTracker.h"
+
+  export *
+  module * { export * }
+}
+
+module TuloEngageTracker.Swift {
+    header "TuloEngageTracker-Swift.h"
+    requires objc
+}

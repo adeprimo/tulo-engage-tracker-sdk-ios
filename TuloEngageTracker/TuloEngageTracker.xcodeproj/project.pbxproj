@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77E2EFB222257CEF009ABD3A /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E2EFB122257CEF009ABD3A /* AnyCodable.swift */; };
+		77E2EFB422268131009ABD3A /* ActiveTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E2EFB322268131009ABD3A /* ActiveTime.swift */; };
+		77EF5017220B08E50008584B /* TuloEngageTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EF5015220B08E50008584B /* TuloEngageTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77EF501E220B10680008584B /* TuloEngageTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF501D220B10680008584B /* TuloEngageTracker.swift */; };
+		77EF5020220DAE560008584B /* TrackerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF501F220DAE560008584B /* TrackerUserDefaults.swift */; };
+		77EF5022220DCF8C0008584B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5021220DCF8C0008584B /* User.swift */; };
+		77EF5026221441EF0008584B /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5025221441EF0008584B /* Dispatcher.swift */; };
+		77EF5028221442240008584B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5027221442240008584B /* Event.swift */; };
+		77EF502A221549660008584B /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5029221549660008584B /* Content.swift */; };
+		77EF502E2216B3300008584B /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF502D2216B3300008584B /* Source.swift */; };
+		77EF503A2216DD0B0008584B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF50392216DD0B0008584B /* Logger.swift */; };
+		77EF506A221BF04E0008584B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5069221BF04E0008584B /* Context.swift */; };
+		77EF5070221C49D50008584B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF506F221C49D50008584B /* Environment.swift */; };
+		77EF5072221D442A0008584B /* URLSessionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5071221D442A0008584B /* URLSessionDispatcher.swift */; };
+		77EF5074221D452C0008584B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5073221D452C0008584B /* Global.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77E2EFB122257CEF009ABD3A /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		77E2EFB322268131009ABD3A /* ActiveTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTime.swift; sourceTree = "<group>"; };
+		77EF5012220B08E50008584B /* TuloEngageTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TuloEngageTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EF5015220B08E50008584B /* TuloEngageTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuloEngageTracker.h; sourceTree = "<group>"; };
+		77EF5016220B08E50008584B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EF501D220B10680008584B /* TuloEngageTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuloEngageTracker.swift; sourceTree = "<group>"; };
+		77EF501F220DAE560008584B /* TrackerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerUserDefaults.swift; sourceTree = "<group>"; };
+		77EF5021220DCF8C0008584B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		77EF5025221441EF0008584B /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		77EF5027221442240008584B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		77EF5029221549660008584B /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		77EF502D2216B3300008584B /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		77EF50392216DD0B0008584B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		77EF5069221BF04E0008584B /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		77EF506F221C49D50008584B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		77EF5071221D442A0008584B /* URLSessionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDispatcher.swift; sourceTree = "<group>"; };
+		77EF5073221D452C0008584B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77EF500F220B08E50008584B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77EF5008220B08E50008584B = {
+			isa = PBXGroup;
+			children = (
+				77EF5014220B08E50008584B /* TuloEngageTracker */,
+				77EF5013220B08E50008584B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77EF5013220B08E50008584B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77EF5012220B08E50008584B /* TuloEngageTracker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77EF5014220B08E50008584B /* TuloEngageTracker */ = {
+			isa = PBXGroup;
+			children = (
+				77EF5015220B08E50008584B /* TuloEngageTracker.h */,
+				77EF5016220B08E50008584B /* Info.plist */,
+				77EF501D220B10680008584B /* TuloEngageTracker.swift */,
+				77EF501F220DAE560008584B /* TrackerUserDefaults.swift */,
+				77EF5021220DCF8C0008584B /* User.swift */,
+				77EF5025221441EF0008584B /* Dispatcher.swift */,
+				77EF5027221442240008584B /* Event.swift */,
+				77EF5029221549660008584B /* Content.swift */,
+				77EF502D2216B3300008584B /* Source.swift */,
+				77EF50392216DD0B0008584B /* Logger.swift */,
+				77EF5069221BF04E0008584B /* Context.swift */,
+				77EF506F221C49D50008584B /* Environment.swift */,
+				77EF5071221D442A0008584B /* URLSessionDispatcher.swift */,
+				77EF5073221D452C0008584B /* Global.swift */,
+				77E2EFB122257CEF009ABD3A /* AnyCodable.swift */,
+				77E2EFB322268131009ABD3A /* ActiveTime.swift */,
+			);
+			path = TuloEngageTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		77EF500D220B08E50008584B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EF5017220B08E50008584B /* TuloEngageTracker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		77EF5011220B08E50008584B /* TuloEngageTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EF501A220B08E50008584B /* Build configuration list for PBXNativeTarget "TuloEngageTracker" */;
+			buildPhases = (
+				77EF500D220B08E50008584B /* Headers */,
+				77EF500E220B08E50008584B /* Sources */,
+				77EF500F220B08E50008584B /* Frameworks */,
+				77EF5010220B08E50008584B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuloEngageTracker;
+			productName = EngageTracker;
+			productReference = 77EF5012220B08E50008584B /* TuloEngageTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77EF5009220B08E50008584B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Adeprimo;
+				TargetAttributes = {
+					77EF5011220B08E50008584B = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 77EF500C220B08E50008584B /* Build configuration list for PBXProject "TuloEngageTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 77EF5008220B08E50008584B;
+			productRefGroup = 77EF5013220B08E50008584B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77EF5011220B08E50008584B /* TuloEngageTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77EF5010220B08E50008584B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77EF500E220B08E50008584B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E2EFB222257CEF009ABD3A /* AnyCodable.swift in Sources */,
+				77EF5020220DAE560008584B /* TrackerUserDefaults.swift in Sources */,
+				77EF501E220B10680008584B /* TuloEngageTracker.swift in Sources */,
+				77EF506A221BF04E0008584B /* Context.swift in Sources */,
+				77EF502A221549660008584B /* Content.swift in Sources */,
+				77EF5022220DCF8C0008584B /* User.swift in Sources */,
+				77EF5074221D452C0008584B /* Global.swift in Sources */,
+				77EF503A2216DD0B0008584B /* Logger.swift in Sources */,
+				77EF502E2216B3300008584B /* Source.swift in Sources */,
+				77EF5070221C49D50008584B /* Environment.swift in Sources */,
+				77E2EFB422268131009ABD3A /* ActiveTime.swift in Sources */,
+				77EF5028221442240008584B /* Event.swift in Sources */,
+				77EF5026221441EF0008584B /* Dispatcher.swift in Sources */,
+				77EF5072221D442A0008584B /* URLSessionDispatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		77EF5018220B08E50008584B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77EF5019220B08E50008584B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77EF501B220B08E50008584B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TuloEngageTracker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adeprimo.TuloEngageTracker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77EF501C220B08E50008584B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TuloEngageTracker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adeprimo.TuloEngageTracker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77EF500C220B08E50008584B /* Build configuration list for PBXProject "TuloEngageTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EF5018220B08E50008584B /* Debug */,
+				77EF5019220B08E50008584B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77EF501A220B08E50008584B /* Build configuration list for PBXNativeTarget "TuloEngageTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EF501B220B08E50008584B /* Debug */,
+				77EF501C220B08E50008584B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77EF5009220B08E50008584B /* Project object */;
+}

@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v1.0.0-beta.1",
+  "iOS" : [
+    {
+      "name" : "TuloEngageTracker",
+      "hash" : "76121c7ba72d764d0d1b52e3088f30a9de8b6ce75a04c83ed1275423eb58e95f"
+    }
+  ]
+}
