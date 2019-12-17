@@ -56,10 +56,10 @@ All tracking in Tulo Engage Tracker is done by sending different events. You can
 When set, the user data is always sent together with all events. User data contains the following properties: userId, paywayId, states, products, positionLon, positionLat, location. If you want to save and persist the user data properties in your app so it is available after restarting the app, you can do so by setting persist to true. To delete a property you can set it to null.
 ```Swift
 // set user properties and save them in app
-engageTracker.setData(userId: "123456", products: ["product1", "product2"], persist: true)
+engageTracker.setUser(userId: "123456", products: ["product1", "product2"], persist: true)
 
 // delete a property and save it
-engageTracker.setData(products: nil, persist: true)
+engageTracker.setUser(products: nil, persist: true)
 ```
 
 ### Setting Content Data
