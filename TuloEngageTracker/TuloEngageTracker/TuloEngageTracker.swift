@@ -10,70 +10,6 @@ import Foundation
 
 final public class TuloEngageTracker: NSObject {
     
-    /*@objc public var userId: String? {
-        get {
-            return trackerUserDefaults.userId
-        }
-        set {
-            trackerUserDefaults.userId = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }
-    @objc public var paywayId: String? {
-        get {
-            return trackerUserDefaults.paywayId
-        }
-        set {
-            trackerUserDefaults.paywayId = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }
-    @objc public var states: [String]? {
-        get {
-            return trackerUserDefaults.states
-        }
-        set {
-            trackerUserDefaults.states = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }
-    @objc public var products: [String]? {
-        get {
-            return trackerUserDefaults.products
-        }
-        set {
-            trackerUserDefaults.products = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }
-    @objc public var location: String? {
-        get {
-            return trackerUserDefaults.location
-        }
-        set {
-            trackerUserDefaults.location = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }
-    @objc public var positionLon: String? {
-        get {
-            return trackerUserDefaults.positionLon
-        }
-        set {
-            trackerUserDefaults.positionLon = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }
-    @objc public var positionLat: String? {
-        get {
-            return trackerUserDefaults.positionLat
-        }
-        set {
-            trackerUserDefaults.positionLat = newValue
-            user = User.current(in: trackerUserDefaults)
-        }
-    }*/
-    
     @objc public var optOut: Bool {
         get {
             return trackerUserDefaults.optOut
@@ -111,19 +47,10 @@ final public class TuloEngageTracker: NSObject {
             trackerUserDefaults.clientId = newClientId
             self.clientId = newClientId
         }
-        //if trackerUserDefaults.userId != nil {
-            self.user = User.current(in: trackerUserDefaults)
-        //}
-        self.dispatcher = dispatcher;
-        //self.sessionId = trackerUserDefaults.sessionId ?? ""
-        /*if let existingRootEventId = trackerUserDefaults.rootEventId {
-            self.rootEventId = existingRootEventId
-        } else {
-            let newRootEventId = UUID().uuidString.lowercased()
-            trackerUserDefaults.rootEventId = newRootEventId
-            self.rootEventId = newRootEventId
-        }*/
         
+        self.user = User.current(in: trackerUserDefaults)
+        self.dispatcher = dispatcher;
+       
         self.url = "/"
         super.init()
         newRootEventId()
@@ -273,60 +200,8 @@ extension TuloEngageTracker {
                 trackerUserDefaults.location = location
             }
         }
-        /*self.user = User(userId: userId, paywayId: paywayId, states: states, products: products, positionLon: positionLon, positionLat: positionLat, location: location)
-        if persist {
-            trackerUserDefaults.userId = userId
-            trackerUserDefaults.paywayId = paywayId
-            trackerUserDefaults.states = states
-            trackerUserDefaults.products = products
-            trackerUserDefaults.positionLon = positionLon
-            trackerUserDefaults.positionLat = positionLat
-            trackerUserDefaults.location = location
-        }*/
+
     }
-    
-    /*@objc public func setUserProperty(_ value: Any, forName: String, persist: Bool = false) {
-        
-        switch forName {
-        case "userId":
-            self.user!.userId = value as? String
-            if persist {
-                trackerUserDefaults.userId = value as? String
-            }
-        case "paywayId":
-            self.user!.paywayId = value as? String
-            if persist {
-                trackerUserDefaults.paywayId = value as? String
-            }
-        case "states":
-            self.user!.states = value as? [String]
-            if persist {
-                trackerUserDefaults.states = value as? [String]
-            }
-        case "products":
-            self.user!.products = value as? [String]
-            if persist {
-                trackerUserDefaults.products = value as? [String]
-            }
-        case "positionLon":
-            self.user!.positionLon = value as? String
-            if persist {
-                trackerUserDefaults.positionLon = value as? String
-            }
-        case "positionLat":
-            self.user!.positionLat = value as? String
-            if persist {
-                trackerUserDefaults.positionLat = value as? String
-            }
-        case "location":
-            self.user!.location = value as? String
-            if persist {
-                trackerUserDefaults.location = value as? String
-            }
-        default:
-            break
-        }
-    }*/
     
     @objc public func setContent(state: String? = nil, type: String? = nil, articleId: String? = nil, publishDate: Date? = nil, title: String? = nil, section: String? = nil, keywords: [String]? = nil, authorId: [String]? = nil, articleLon: String? = nil, articleLat: String? = nil) {
         self.content = Content(state: state, type: type, articleId: articleId, publishDate: publishDate, title: title, section: section, keywords: keywords, authorId: authorId, articleLon: articleLon, articleLat: articleLat)

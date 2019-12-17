@@ -56,7 +56,11 @@ extension Encodable {
         fullISO8610Formatter.timeZone = TimeZone(secondsFromGMT: 0)
         fullISO8610Formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
         encoder.dateEncodingStrategy = .formatted(fullISO8610Formatter)
-        encoder.outputFormatting = .sortedKeys
+        if #available(iOS 11.0, *) {
+            encoder.outputFormatting = .sortedKeys
+        } else {
+            // Fallback on earlier versions
+        }
         return try encoder.encode(self)
     }
 }

@@ -20,7 +20,7 @@ struct User: Codable {
 
 extension User {
     static func current(in trackerUserDefaults: TrackerUserDefaults) -> User {
-        var trackerUserDefaults = trackerUserDefaults
+        let trackerUserDefaults = trackerUserDefaults
         let userId = trackerUserDefaults.userId
         let paywayId = trackerUserDefaults.paywayId
         let states = trackerUserDefaults.states

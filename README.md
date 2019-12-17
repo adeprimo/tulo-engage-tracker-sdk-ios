@@ -40,7 +40,7 @@ A new session is started every time the app is started. If you want to start a n
 func applicationWillEnterForeground(_ application: UIApplication) {
         // start a new session and track app open
         engageTracker.startSession()
-        engageTracker.trackEvent(name: "app:open")
+        engageTracker.trackEvent(name: "open")
     }
 ```
 ### Opt Out
@@ -106,7 +106,11 @@ Custom events can be used to track e.g. features or actions in the app
 
 Tracks an event of type name. Input name and optional customData formatted as JSON
 ```Swift
-engageTracker.trackEvent(name: "screenshot", customData: "{\"article\": \"123\"})
+engageTracker.trackEvent(name: "screenshot", customData: "{\"article\": \"123\"}")
+```
+Tracks an event of type name with a custom event prefix. Input name and optional customData formatted as JSON
+```Swift
+engageTracker.trackEvent(name: "screenshot", customData: "{\"article\": \"123\"}", "myprefix")
 ```
 Tracks an event of type name and includes content data if set. Input name and optional customData formatted as JSON, url, referrer, referrerProtocol
 ```Swift
