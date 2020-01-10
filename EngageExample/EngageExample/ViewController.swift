@@ -25,12 +25,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onClick(_ sender: UIButton) {
+        TuloEngageTracker.shared.setProductId(productId: "PEIWEI")
         TuloEngageTracker.shared.trackArticleInteraction(type: "related_article")
         TuloEngageTracker.shared.trackArticleActiveTime(startTime: Date(), endTime: Date().addingTimeInterval(TimeInterval(5.0 * 60.0)))
         TuloEngageTracker.shared.trackEvent(name: "test", customData: "{\"data\": {\"first\": 1}}")
     }
     
     @IBAction func onNextClick(_ sender: UIButton) {
+        TuloEngageTracker.shared.setProductId(productId: "TEST_PEIWEI")
         TuloEngageTracker.shared.setContent(state: "new content")
         TuloEngageTracker.shared.trackEventWithContentData(name: "app:click", url: "/next")
     }

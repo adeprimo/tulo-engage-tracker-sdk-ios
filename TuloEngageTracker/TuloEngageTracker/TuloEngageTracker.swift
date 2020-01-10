@@ -25,7 +25,7 @@ final public class TuloEngageTracker: NSObject {
     internal var user: User?
     internal var content: Content?
     private let dispatcher: Dispatcher
-    internal let context: Context
+    internal var context: Context
     internal var sessionId: String?
     internal let clientId: String
     internal var rootEventId: String?
@@ -37,6 +37,7 @@ final public class TuloEngageTracker: NSObject {
     internal static var _sharedInstance: TuloEngageTracker?
     
     required public init(organizationId: String, productId: String, dispatcher: Dispatcher) {
+        
         self.context = Context(organizationId: organizationId, productId: productId)
        
         self.trackerUserDefaults = TrackerUserDefaults(suiteName: "\(organizationId)\(productId)")
@@ -207,4 +208,7 @@ extension TuloEngageTracker {
         self.content = Content(state: state, type: type, articleId: articleId, publishDate: publishDate, title: title, section: section, keywords: keywords, authorId: authorId, articleLon: articleLon, articleLat: articleLat)
     }
     
+    @objc public func setProductId(productId: String) {
+        self.context.productId = productId
+    }
 }
