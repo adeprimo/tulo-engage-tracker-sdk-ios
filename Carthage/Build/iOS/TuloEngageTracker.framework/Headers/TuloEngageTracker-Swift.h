@@ -252,6 +252,7 @@ SWIFT_CLASS("_TtC17TuloEngageTracker17TuloEngageTracker")
 - (void)trackArticleReadWithCustomData:(NSString * _Nonnull)customData eventPrefix:(NSString * _Nonnull)eventPrefix;
 - (void)setUserWithUserId:(NSString * _Nullable)userId paywayId:(NSString * _Nullable)paywayId states:(NSArray<NSString *> * _Nullable)states products:(NSArray<NSString *> * _Nullable)products positionLon:(NSString * _Nullable)positionLon positionLat:(NSString * _Nullable)positionLat location:(NSString * _Nullable)location persist:(BOOL)persist;
 - (void)setContentWithState:(NSString * _Nullable)state type:(NSString * _Nullable)type articleId:(NSString * _Nullable)articleId publishDate:(NSDate * _Nullable)publishDate title:(NSString * _Nullable)title section:(NSString * _Nullable)section keywords:(NSArray<NSString *> * _Nullable)keywords authorId:(NSArray<NSString *> * _Nullable)authorId articleLon:(NSString * _Nullable)articleLon articleLat:(NSString * _Nullable)articleLat;
+- (void)setProductIdWithProductId:(NSString * _Nonnull)productId;
 @end
 
 #if __has_attribute(external_source_symbol)
@@ -512,6 +513,7 @@ SWIFT_CLASS("_TtC17TuloEngageTracker17TuloEngageTracker")
 - (void)trackArticleReadWithCustomData:(NSString * _Nonnull)customData eventPrefix:(NSString * _Nonnull)eventPrefix;
 - (void)setUserWithUserId:(NSString * _Nullable)userId paywayId:(NSString * _Nullable)paywayId states:(NSArray<NSString *> * _Nullable)states products:(NSArray<NSString *> * _Nullable)products positionLon:(NSString * _Nullable)positionLon positionLat:(NSString * _Nullable)positionLat location:(NSString * _Nullable)location persist:(BOOL)persist;
 - (void)setContentWithState:(NSString * _Nullable)state type:(NSString * _Nullable)type articleId:(NSString * _Nullable)articleId publishDate:(NSDate * _Nullable)publishDate title:(NSString * _Nullable)title section:(NSString * _Nullable)section keywords:(NSArray<NSString *> * _Nullable)keywords authorId:(NSArray<NSString *> * _Nullable)authorId articleLon:(NSString * _Nullable)articleLon articleLat:(NSString * _Nullable)articleLat;
+- (void)setProductIdWithProductId:(NSString * _Nonnull)productId;
 @end
 
 #if __has_attribute(external_source_symbol)
