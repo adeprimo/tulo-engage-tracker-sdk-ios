@@ -3,8 +3,8 @@ import Foundation
 struct ActiveTime: Encodable {
     let startTime: Date
     let endTime: Date
-    var secondsActive: Double {
-        return endTime.timeIntervalSince(startTime)
+    var secondsActive: Int {
+        return Int(endTime.timeIntervalSince(startTime))
     }
     
     private enum CodingKeys: String, CodingKey {

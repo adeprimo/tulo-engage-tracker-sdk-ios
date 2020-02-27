@@ -10,6 +10,8 @@ import UIKit
 import TuloEngageTracker
 
 class ViewController: UIViewController {
+    
+    var startTime = Date()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
     @IBAction func onClick(_ sender: UIButton) {
         TuloEngageTracker.shared.setProductId(productId: "PEIWEI")
         TuloEngageTracker.shared.trackArticleInteraction(type: "related_article")
-        TuloEngageTracker.shared.trackArticleActiveTime(startTime: Date(), endTime: Date().addingTimeInterval(TimeInterval(5.0 * 60.0)))
+        TuloEngageTracker.shared.trackArticleActiveTime(startTime: startTime, endTime: Date())
         TuloEngageTracker.shared.trackEvent(name: "test", customData: "{\"data\": {\"first\": 1}}")
     }
     
