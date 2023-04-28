@@ -48,23 +48,23 @@ struct Referrer: Codable {
 }
 
 struct Browser: Codable {
-    let ua: String? = Environment.userAgent
-    let name: String? = Environment.bundleName
-    let version: String? = Environment.appVersion
-    let platform: String = Environment.operatingSystemName
+    var ua: String? = Environment.userAgent
+    var name: String? = Environment.bundleName
+    var version: String? = Environment.appVersion
+    var platform: String = Environment.operatingSystemName
     
     
 }
 
 struct Screen: Codable {
-    let height: Int = Int(Environment.screenSizeInPixels.height)
-    let width:  Int = Int(Environment.screenSizeInPixels.width)
-    let colorDepth: Int = 32
+    var height: Int = Int(Environment.screenSizeInPixels.height)
+    var width:  Int = Int(Environment.screenSizeInPixels.width)
+    var colorDepth: Int = 32
 }
 
 struct DeviceLocale: Codable {
-    let language: String = Locale.current.identifier.replacingOccurrences(of: "_", with: "-")
-    let timezone_offset: Int = (0 - TimeZone.current.secondsFromGMT()) / 60
+    var language: String = Locale.current.identifier.replacingOccurrences(of: "_", with: "-")
+    var timezone_offset: Int = (0 - TimeZone.current.secondsFromGMT()) / 60
 }
 
 extension Locale {

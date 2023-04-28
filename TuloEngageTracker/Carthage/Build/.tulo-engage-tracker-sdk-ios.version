@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "69ef25566cc57379ffd005f118eb3ffa6d714db7",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "3744b5c6ee0486cbd67039edab5a690ab1a2c97f9fe63610c1462a790587a549",
+      "name" : "TuloEngageTracker",
+      "container" : "TuloEngageTracker.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "c2d2d9cf986082a901ed4f490d3a0d78f56a1a17f7b37971208162ac27a98b80",
+      "name" : "TuloEngageTracker",
+      "container" : "TuloEngageTracker.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}

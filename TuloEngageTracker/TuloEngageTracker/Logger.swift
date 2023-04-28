@@ -24,19 +24,19 @@ import Foundation
 
 extension Logger {
     func verbose(_ message: @autoclosure () -> String) {
-        log(message, level: .verbose)
+        log(message(), level: .verbose)
     }
     func debug(_ message: @autoclosure () -> String) {
-        log(message, level: .debug)
+        log(message(), level: .debug)
     }
     func info(_ message: @autoclosure () -> String) {
-        log(message, level: .info)
+        log(message(), level: .info)
     }
     func warning(_ message: @autoclosure () -> String) {
-        log(message, level: .warning)
+        log(message(), level: .warning)
     }
     func error(_ message: @autoclosure () -> String) {
-        log(message, level: .error)
+        log(message(), level: .error)
     }
 }
 
