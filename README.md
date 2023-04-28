@@ -12,6 +12,11 @@ Add the following to your Cartfile:
 github "adeprimo/tulo-engage-tracker-sdk-ios"
 ```
 
+Run carthage update to download the framework and drag the built TuloEngageTracker.framework into your Xcode project. We also provide a pre-built version for every release, which can be downloaded at releases on GitHub.
+
+### Macs with Apple Silicon and XCFrameworks
+If you're using TuloEngageTracker via Carthage on Macs with Apple Silicon or want to use XCFrameworks, please use Carthage >= 0.37.0, which introduced [support for XCFramework](https://github.com/Carthage/Carthage/releases/tag/0.37.0). Make sure to use carthage build --use-xcframeworks --no-use-binaries after running carthage update --use-xcframeworks. Carthage 0.37.0 needs to rebuild the XCFramework from source because it can't handle GitHub dependencies that download binaries. Learn more in their [release notes](https://github.com/Carthage/Carthage/releases/tag/0.37.0).
+
 ## Usage
 ### Setup
 In order to be able to send tracking events you must import TuloEngageTracker and create an instance of it. You will need the organizationId, productId and the URL to the event service.
